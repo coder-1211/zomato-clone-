@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 }
 
 .navbar {
@@ -23,41 +23,192 @@ body {
 .navbar_logo {
     width: 100%;
 }
-.nav_button {
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
+
+.button_primary {
+    background-image: linear-gradient(to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
     color: #fff;
     border: none;
     padding: 12px;
     border-radius: 6px;
-    
-    
+
+
 }
- .nav_button:hover {
+
+.button_primary:hover {
     background-position: right center;
     border: 2px solid #FF6767;
     cursor: pointer;
- }
+}
+
+.conatiner {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main_container_image {
+    width: 100%;
+}
+
+.main_img_container_image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 /25%);
+}
+
+.description_txt {
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #1d3557;
+}
+
+.foodcart_image {
+    width: 100%;
+}
+
+.burger_image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.explore_foodcarts {
+    background-color: #F9F9F9;
+}
+
+.foodcart_description {
+
+    padding: 15px;
+}
+
+.explore_menu_heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #1d3557;
+    font-weight: 800;
+}
+
+
 @media screen and (min-width: 768px) {
-    .navbar{
-       justify-content: space-between;
-       padding: 10px 30px;
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
     }
-  }
-@media screen and (min-width:1024px){
+
+    .main_container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .explore_menu_list {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        gap: 20px;
+        padding: 0px 100px;
+    }
+
+    #pizza_card {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
     .navbar_brand {
         width: 150px;
     }
+
     .navbar_logo {
         padding: 20px;
         font-size: 20px;
         font-weight: 600;
     }
-    
+
+    .main_decsription {
+        width: 100%;
+
+    }
+
+    .description_txt {
+        font-weight: 10000;
+        font-size: 80px;
+        margin: 20px 0px;
+        color: #1d3557;
+
+    }
+
+    .button_primary {
+        background-color: #1D3557 !important;
+        font-size: 90px;
+        border-radius: 20px;
+    }
+
+    .navbar_logo {
+        width: 500px;
+
+    }
+
+    .conatiner {
+        max-width: 50%;
+    }
+
+    .foodcart_description {
+        font-weight: 10000;
+        font-size: 50px;
+        margin: 20px 0px;
+        color: #1d3557;
+    }
+
+    #pizza_card {
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+
+    .explore_menu_heading {
+        font-weight: 10000;
+        font-size: 80px;
+        margin: 20px 0px;
+        color: #1d3557;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .explore_menu_list {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        gap: 30px;
+    }
+
 }
 
-    
+.explore_menu__container {
+    position: relative;
+}
+
+.explore_menu_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
+         z-index: -3;   
+         transform: skewY(-5deg);
+         margin-top: 70px;
+         margin-bottom: 30px;
+}
