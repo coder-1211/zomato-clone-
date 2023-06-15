@@ -42,7 +42,11 @@ body {
     border: 2px solid #FF6767;
     cursor: pointer;
 }
-
+.button_cart1:hover {
+    background-position: right center;
+    border: 2px solid #FF6767;
+    cursor: pointer;
+}
 .conatiner {
     padding: 20px;
     max-width: 100%;
@@ -93,6 +97,61 @@ body {
     color: #1d3557;
     font-weight: 800;
 }
+.button_cart
+{
+    display: flex;
+    justify-content: center;
+}
+.button_cart1
+{
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    color: #fff;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+   font-size: 20px;
+    border-radius:20px;
+    cursor: pointer;
+}
+.main_main_description {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #1d3557;
+
+}
+
+
+
+.restaurant1img,.restaurant2img,.restaurant3img,.restaurant4img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.main_restaurant1_image,.main_restaurant4_image {
+        
+    width: 100%;
+           height: 150px;
+}
+.main_restaurant2_image ,.main_restaurant3_image {
+    width:120%;
+    height: 200px;
+}
+.mainrestautrantrow {
+    
+    align-items: baseline;
+    margin-bottom:4px ;
+}
+
+.mainrestautrantrow,.mainrestautrantrow2 {
+   width: 100%;
+   display: flex;
+   gap: 4px;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -120,8 +179,42 @@ body {
         margin-top: -20px;
         margin-bottom: 30px;
     }
-
+    .explore_menu__container {
+        position: relative;
+    }
+    
+    .explore_menu_background {
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right,
+                #ff512f 0%,
+                #dd2476 51%,
+                #ff512f 100%);
+             z-index: -3;   
+             transform: skewY(-5deg);
+             margin-top: 70px;
+             margin-bottom: 30px;
+    }
+   .main_retaurants {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+   .main_main_description {
+    font-size: 40px;
+    font-weight: 800;
+    width: 100%
+   }
+   .main_restaurant_image {
+    width: 100%;
+   }
+  
 }
+
 
 @media screen and (min-width:1024px) {
     .navbar_brand {
@@ -159,7 +252,7 @@ body {
     }
 
     .conatiner {
-        max-width: 50%;
+        max-width: 75%;
     }
 
     .foodcart_description {
@@ -189,26 +282,84 @@ body {
         margin-bottom: 10px;
         gap: 30px;
     }
+    .explore_menu__container {
+        position: relative;
+    }
+    
+    .explore_menu_background {
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right,
+                #ff512f 0%,
+                #dd2476 51%,
+                #ff512f 100%);
+             z-index: -3;   
+             transform: skewY(-5deg);
+             margin-top: 70px;
+             margin-bottom: 30px;
+    }
+    .button_cart1 {
+        padding: 20px;
+        font-size: 75px;
+        font-weight: 400;
+        width: 500px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    
+    .main_retaurants {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 75vh;
+    }
+    .main_main_description {
+        font-weight: 10000;
+        font-size: 80px;
+        margin: 20px 0px;
+        color: #1d3557;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .restaurant1img,.restaurant4img {
+        width: 100%;
+        height:1000%;
+        border-radius: 7px;
+    }
+   
+    .restaurant2img,.restaurant3img {
+        width: 100%;
+        height: -1%;
+        border-radius: 7px;
+    }
+    .main_restaurant1_image,.main_restaurant4_image {
+            
+        width: 100%;
+        height: 1000000%;
+    }
+    .main_restaurant2_image ,.main_restaurant3_image {
+        width:100%;
+        height: 100%;
+    }
+    .mainrestautrantrow {
+        
+        align-items: baseline;
+        margin-bottom:4px ;
+    }
+    
+    .mainrestautrantrow,.mainrestautrantrow2 {
+       width: 100%;
+       display: flex;
+       row-gap: 30px;
+       column-gap: 20px;
+    }
+     
+       
 
 }
 
-.explore_menu__container {
-    position: relative;
-}
 
-.explore_menu_background {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right,
-            #ff512f 0%,
-            #dd2476 51%,
-            #ff512f 100%);
-         z-index: -3;   
-         transform: skewY(-5deg);
-         margin-top: 70px;
-         margin-bottom: 30px;
-}
