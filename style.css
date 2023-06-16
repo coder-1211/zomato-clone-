@@ -42,11 +42,13 @@ body {
     border: 2px solid #FF6767;
     cursor: pointer;
 }
+
 .button_cart1:hover {
     background-position: right center;
     border: 2px solid #FF6767;
     cursor: pointer;
 }
+
 .conatiner {
     padding: 20px;
     max-width: 100%;
@@ -97,22 +99,23 @@ body {
     color: #1d3557;
     font-weight: 800;
 }
-.button_cart
-{
+
+.button_cart {
     display: flex;
     justify-content: center;
 }
-.button_cart1
-{
-    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+
+.button_cart1 {
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
     color: #fff;
     margin-top: 15px;
     padding: 12px;
     border: none;
-   font-size: 20px;
-    border-radius:20px;
+    font-size: 20px;
+    border-radius: 20px;
     cursor: pointer;
 }
+
 .main_main_description {
     text-align: center;
     margin: 10px;
@@ -126,30 +129,188 @@ body {
 
 
 
-.restaurant1img,.restaurant2img,.restaurant3img,.restaurant4img {
+.restaurant1img,
+.restaurant2img,
+.restaurant3img,
+.restaurant4img {
     width: 100%;
     height: 100%;
     border-radius: 7px;
 }
-.main_restaurant1_image,.main_restaurant4_image {
-        
+
+.main_restaurant1_image,
+.main_restaurant4_image {
+
     width: 100%;
-           height: 150px;
-}
-.main_restaurant2_image ,.main_restaurant3_image {
-    width:120%;
-    height: 200px;
-}
-.mainrestautrantrow {
-    
-    align-items: baseline;
-    margin-bottom:4px ;
+    height: 150px;
 }
 
-.mainrestautrantrow,.mainrestautrantrow2 {
-   width: 100%;
-   display: flex;
-   gap: 4px;
+.main_restaurant2_image,
+.main_restaurant3_image {
+    width: 120%;
+    height: 200px;
+}
+
+.mainrestautrantrow {
+
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.mainrestautrantrow,
+.mainrestautrantrow2 {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+
+.stay_updated_heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.stay_updated_writie {
+
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #1d3557;
+
+}
+
+.stay_email_input {
+
+    border: 1px solid #dd2424;
+    border-radius: 20px;
+    background-color: #fcedf0;
+    margin-top: 15px;
+    height: 45px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.stay_email_input:hover {
+    background-position: right center;
+    border: 2px solid red;
+    cursor: pointer;
+    width: 50%;
+    height: 200px;
+    transition: width 2s, height 4s;
+    transition-duration: 2s;
+}
+
+.stay_email {
+
+    justify-content: center;
+    text-align: center;
+    align-items: baseline;
+
+
+}
+
+.stay_button:hover {
+    background-position: right center;
+    background-image: linear-gradient(to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
+    cursor: pointer;
+    width: 20%;
+    height: 225px;
+    transition: width 2s, height 4s;
+    transition-duration: 2s;
+}
+
+.stay_button {
+    flex-direction: row;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    color: #fff;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.quote_conatiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url(https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80) center center / cover no-repeat;
+    margin-left: 1px;
+}
+
+.background_img {
+    position: absolute;
+
+    height: 200px;
+    width: 100%;
+
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+
+}
+
+.backgrndtxt {
+
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    margin: 0 1rem;
+
+
+
+
+
+}
+
+.footer_zomato {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    font-size: .8em;
+}
+
+.endfoo {
+
+    width: 300px;
+    filter: brightness(0) invert(1);
+
+
+
+}
+
+.footer_zomato {
+
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    border-radius: 30px 30px 0px 0px;
+    height: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+ul {
+    margin-top: -1rem;
+    color: #fff;
+    margin-left: 25px;
+    font-weight: 100;
+    font-size: 20px;
+
 }
 
 
@@ -179,40 +340,62 @@ body {
         margin-top: -20px;
         margin-bottom: 30px;
     }
+
     .explore_menu__container {
         position: relative;
     }
-    
+
     .explore_menu_background {
         position: absolute;
         top: 0;
         left: 0;
-    
+
         width: 100%;
         height: 100%;
         background-image: linear-gradient(to right,
                 #ff512f 0%,
                 #dd2476 51%,
                 #ff512f 100%);
-             z-index: -3;   
-             transform: skewY(-5deg);
-             margin-top: 70px;
-             margin-bottom: 30px;
+        z-index: -3;
+        transform: skewY(-5deg);
+        margin-top: 70px;
+        margin-bottom: 30px;
     }
-   .main_retaurants {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   }
-   .main_main_description {
-    font-size: 40px;
-    font-weight: 800;
-    width: 100%
-   }
-   .main_restaurant_image {
-    width: 100%;
-   }
-  
+
+    .main_retaurants {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main_main_description {
+        font-size: 40px;
+        font-weight: 800;
+        width: 100%
+    }
+
+    .main_restaurant_image {
+        width: 100%;
+    }
+
+    .stay_email_input {
+        width: 50%;
+        height: 50px;
+    }
+
+    .footer_zomato {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+
+    ul {
+        margin-top: 40px;
+
+    }
+
+    ;
+
 }
 
 
@@ -229,14 +412,15 @@ body {
 
     .main_decsription {
         width: 100%;
-
+        gap: 30px;
     }
 
     .description_txt {
         font-weight: 10000;
-        font-size: 80px;
+        font-size: 200px;
         margin: 20px 0px;
         color: #1d3557;
+
 
     }
 
@@ -269,7 +453,7 @@ body {
 
     .explore_menu_heading {
         font-weight: 10000;
-        font-size: 80px;
+        font-size: 200px;
         margin: 20px 0px;
         color: #1d3557;
         margin-top: 100px;
@@ -282,26 +466,28 @@ body {
         margin-bottom: 10px;
         gap: 30px;
     }
+
     .explore_menu__container {
         position: relative;
     }
-    
+
     .explore_menu_background {
         position: absolute;
         top: 0;
         left: 0;
-    
+
         width: 100%;
         height: 100%;
         background-image: linear-gradient(to right,
                 #ff512f 0%,
                 #dd2476 51%,
                 #ff512f 100%);
-             z-index: -3;   
-             transform: skewY(-5deg);
-             margin-top: 70px;
-             margin-bottom: 30px;
+        z-index: -3;
+        transform: skewY(-4deg);
+        margin-top: 70px;
+        margin-bottom: 10px;
     }
+
     .button_cart1 {
         padding: 20px;
         font-size: 75px;
@@ -310,56 +496,123 @@ body {
         margin-top: 75px;
         margin-bottom: 75px;
     }
-    
+
     .main_retaurants {
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 75vh;
     }
+
     .main_main_description {
-        font-weight: 10000;
-        font-size: 80px;
+        font-weight: 10000000;
+        font-size: 170px;
         margin: 20px 0px;
         color: #1d3557;
         margin-top: 100px;
         margin-bottom: 100px;
     }
-    .restaurant1img,.restaurant4img {
+
+    .restaurant1img,
+    .restaurant4img {
         width: 100%;
-        height:1000%;
+        height: 1000%;
         border-radius: 7px;
     }
-   
-    .restaurant2img,.restaurant3img {
+
+    .restaurant2img,
+    .restaurant3img {
         width: 100%;
         height: -1%;
         border-radius: 7px;
     }
-    .main_restaurant1_image,.main_restaurant4_image {
-            
+
+    .main_restaurant1_image,
+    .main_restaurant4_image {
+
         width: 100%;
         height: 1000000%;
     }
-    .main_restaurant2_image ,.main_restaurant3_image {
-        width:100%;
+
+    .main_restaurant2_image,
+    .main_restaurant3_image {
+        width: 100%;
         height: 100%;
     }
+
     .mainrestautrantrow {
-        
+
         align-items: baseline;
-        margin-bottom:4px ;
+        margin-bottom: 4px;
     }
-    
-    .mainrestautrantrow,.mainrestautrantrow2 {
-       width: 100%;
-       display: flex;
-       row-gap: 30px;
-       column-gap: 20px;
+
+    .mainrestautrantrow,
+    .mainrestautrantrow2 {
+        width: 100%;
+        display: flex;
+        row-gap: 30px;
+        column-gap: 20px;
     }
-     
-       
+
+    .stay_updated_writie {
+        font-size: 150px;
+        font-weight: 600;
+        margin-bottom: 75px;
+    }
+
+    .stay_email_input {
+        width: 35%;
+        height: 150px;
+        font-size: 45px;
+        border: 3px solid #dd2424
+    }
+
+    .stay_button {
+        width: 10%;
+        height: 150px;
+        font-size: 45px;
+        margin-left: 15px;
+
+    }
+
+    .quote_conatiner {
+        margin-top: 400px;
+        width: 100%;
+        height: 800px;
+        border-radius: 40px;
+    }
+
+    .background_img {
+        width: 100%;
+        height: 800px;
+        border-radius: 60px;
+
+
+    }
+
+    .backgrndtxt {
+        font-size: 90px;
+    }
+
+    .footer_zomato {
+        height: 800px;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 70px 70px 0px 0px;
+
+    }
+
+    .logofooter {
+
+        height: 800px;
+        justify-content: space-around;
+    }
+
+    ul {
+        margin-top: 150px;
+        font-weight: 800;
+        font-size: 70px;
+    }
+
 
 }
-
-
